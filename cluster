@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+spawn ssh login.rc.fas.harvard.edu
+expect "Password:"
+send "<PASSWORD>\r"
+
+expect "VerificationCode:"
+set oathtool_output [exec oathtool -b --totp <2FA>]
+send "$oathtool_output\r"
+
+interact
+
