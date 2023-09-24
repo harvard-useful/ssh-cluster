@@ -8,7 +8,7 @@ The way this program works is by using a tool called [expect](https://linux.die.
 
 0. Install oathtool. Mac oathtool can be installed from [here](https://formulae.brew.sh/formula/oath-toolkit) and linux from [here](https://www.cyberciti.biz/faq/use-oathtool-linux-command-line-for-2-step-verification-2fa/). `expect` should already be installed by default.
 
-1. In the `cluster` script, replace `<PASSWORD> `with your actual password and `<2FA>` with the code from [here](https://two-factor.rc.fas.harvard.edu/)
+1. In the `cluster` script, replace `<CLUSTER_USERNAME>` with your cluster username, `<PASSWORD> `with your actual password, and `<2FA>` with the code from [here](https://two-factor.rc.fas.harvard.edu/)
 
 2. Move this script to somewhere in your PATH.
 
