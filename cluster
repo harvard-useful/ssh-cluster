@@ -1,5 +1,5 @@
 #!/usr/bin/expect -f
-spawn ssh -A login.rc.fas.harvard.edu
+spawn ssh -A <CLUSTER_USERNAME>@login.rc.fas.harvard.edu
 expect "Password:"
 send "<PASSWORD>\r"
 
