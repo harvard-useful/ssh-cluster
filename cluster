@@ -1,5 +1,5 @@
 #!/usr/bin/expect -f
-spawn ssh login.rc.fas.harvard.edu
+spawn ssh -A login.rc.fas.harvard.edu
 expect "Password:"
 send "<PASSWORD>\r"
 
